@@ -26,7 +26,7 @@ public:
         if (comprobar_car(nod_right) and comprobar_car(nod_left)!=NULL){
             right_ = right->execute(buscador_mapeo);
             left_ = left->execute(buscador_mapeo);
-        }else if(comprobar_car(nod_right) != NULL){
+        }else if(comprobar_car(nod_right) != NULL){ // Estás comparando bool con null?
             right_ = right->execute(buscador_mapeo);
             if (comprobar_var(nod_left) == NULL  ){
                 left_ = atof((left->input).c_str());
